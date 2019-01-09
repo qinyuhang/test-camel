@@ -1,0 +1,67 @@
+<view class="swiper-test">
+    <view class="group-title">movable-view 上的 touch 事件不冒泡</view>
+    <view class="group">
+        <view>swiper 1-1 未嵌套 movable-view 时行为正常</view>
+        <swiper class="swiper">
+            <swiper-item class="swiper-item"><view>AAA</view></swiper-item>
+            <swiper-item class="swiper-item"><view>BBB</view></swiper-item>
+            <swiper-item class="swiper-item"><view>CCC</view></swiper-item>
+        </swiper>
+
+        <view>swiper 1-2</view>
+        <view>movable-view 占据全部 swiper-item 时，疑似 touch 事件未冒泡，导致 swiper 无法左右滑动</view>
+        <swiper class="swiper">
+            <swiper-item class="swiper-item">
+                <movable-area class="movable-area">
+                    <movable-view direction="all" class="movable-view">
+                        AAA
+                    </movable-view>
+                </movable-area>
+            </swiper-item>
+
+            <swiper-item class="swiper-item">
+                <movable-area class="movable-area">
+                    <movable-view direction="all" class="movable-view">
+                        BBB
+                    </movable-view>
+                </movable-area>
+            </swiper-item>
+
+            <swiper-item class="swiper-item">
+                <movable-area class="movable-area">
+                    <movable-view direction="all" class="movable-view">
+                        CCC
+                    </movable-view>
+                </movable-area>
+            </swiper-item>
+        </swiper>
+
+        <view>swiper 1-3</view>
+        <view>movable-view 占据 swiper-item 高度的一半时，点击未被占据的部分，swiper 可以左右滑动，但缺少回弹动画</view>
+        <swiper class="swiper half-view">
+            <swiper-item class="swiper-item">
+                <movable-area class="movable-area">
+                    <movable-view direction="all" class="movable-view">
+                        AAA
+                    </movable-view>
+                </movable-area>
+            </swiper-item>
+
+            <swiper-item class="swiper-item">
+                <movable-area class="movable-area">
+                    <movable-view direction="all" class="movable-view">
+                        BBB
+                    </movable-view>
+                </movable-area>
+            </swiper-item>
+
+            <swiper-item class="swiper-item">
+                <movable-area class="movable-area">
+                    <movable-view direction="all" class="movable-view">
+                        CCC
+                    </movable-view>
+                </movable-area>
+            </swiper-item>
+        </swiper>
+    </view>
+</view>

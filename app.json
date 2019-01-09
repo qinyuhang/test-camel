@@ -1,5 +1,8 @@
 {
-    "pages": ["pages/CamelTest/index"],
+    "pages": [
+        "pages/CamelTest/index",
+        "pages/SwiperTest/index"
+    ],
     "window":
     {
         "backgroundTextStyle": "light",
