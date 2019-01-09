@@ -46,6 +46,11 @@ Component({
             });
         }
 
+        this.triggerEvent('myevent', {fn:
+            function fn(){
+                console.log('i am fn')
+            }
+        });
     },
     methods: {
         call: function() {

@@ -16,6 +16,9 @@ var pageConfig = {
   go: function(){
     console.log(this.data.keyWord)
   },
+  myevent: function(e){
+    console.log(e)
+  },
   
   onReady: function onReady() {},
   onShow: function onShow() {

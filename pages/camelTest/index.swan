@@ -27,7 +27,9 @@
   </view>
 
   <view style='padding-top: 20vh;'></view>
-  <phone>
+  <phone
+  	bindmyevent="myevent"
+  >
   	<view data-evt="12306" style='background: gray;'>TestBTN</view>
   </phone>
 </view>
