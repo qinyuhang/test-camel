@@ -4,7 +4,7 @@ Component({
     properties: {
         phone: {
             type: String,
-            value: '',
+            value: '800800400-01',
             observer: function (newVal) {
                 if (!!newVal) {
                     const phoneArray = newVal.split(',');
@@ -33,10 +33,10 @@ Component({
         let deviceInfo = {};
         let projectName = '';
         try {
-            deviceInfo = wx.getSystemInfoSync();
-            projectName = wx.getStorageSync("project_name");
+            deviceInfo = swan.getSystemInfoSync();
+            projectName = swan.getStorageSync("project_name");
         } catch (e) {
-            deviceInfo = {};
+            deviceInfo = { brand : ''};
         }
 
         if(deviceInfo.brand.toLowerCase() === 'huawei') {
@@ -45,13 +45,9 @@ Component({
                 projectName,
             });
         }
+
     },
     methods: {
-        handleClose: function() {
-            this.setData({
-                showConfirm: false,
-            });
-        },
         call: function() {
             this.setData({
                 showConfirm: false
@@ -63,12 +59,13 @@ Component({
                 phone = phoneArray[0];
             };
 
-            wx.makePhoneCall({
+            swan.makePhoneCall({
                 phoneNumber: phone
             });
         },
 
         handleSlotClick: function (e) {
+            console.log('slot click!!!', e)
             const phone = this.properties.phone;
             const phoneArray = this.data.phoneArray;
 
@@ -78,7 +75,7 @@ Component({
                     showConfirm: true
                 });
             } else {
-                wx.makePhoneCall({
+                swan.makePhoneCall({
                     phoneNumber: phone
                 })
             }

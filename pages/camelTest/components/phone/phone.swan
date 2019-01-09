@@ -1,6 +1,6 @@
 <view style="display: inline">
     <slot bindtap="handleSlotClick"></slot>
-    <view class="huawei-call-confirm" wx:if="{{!!isHuawei && !!showConfirm}}">
+    <view class="huawei-call-confirm" s-if="{{!!isHuawei && !!showConfirm}}">
         <view class="wrap">
             <view class="confirm">
                 <image class="close" bindtap="handleClose" src="https://s1.ljcdn.com/link-static/resource/newh_xcx/src/components/phone/images/images/close.png"></image>

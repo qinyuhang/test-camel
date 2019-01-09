@@ -26,7 +26,8 @@
     <text class="cancel" bindtap="go">go</text>
   </view>
 
+  <view style='padding-top: 20vh;'></view>
   <phone>
-  	<view data-evt="12306"></view>
+  	<view data-evt="12306" style='background: gray;'>TestBTN</view>
   </phone>
 </view>
