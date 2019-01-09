@@ -1,0 +1,66 @@
+.huawei-call-confirm .wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.huawei-call-confirm .wrap .confirm {
+  box-sizing: border-box;
+  position: relative;
+  padding: 0 60rpx;
+  width: 630rpx;
+  background: #FCFCFC;
+  border-radius: 10rpx;
+  text-align: left;
+}
+
+.huawei-call-confirm .wrap .confirm .close {
+  position: absolute;
+  right: 24rpx;
+  top: 24rpx;
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.huawei-call-confirm .wrap .confirm .phone {
+  font-size: 48rpx;
+  color: #030303;
+  letter-spacing: -1.16rpx;
+  line-height: 60rpx;
+  margin-top: 110rpx;
+}
+
+.huawei-call-confirm .wrap .confirm .extension {
+  font-size: 48rpx;
+  color: #3072F6;
+  letter-spacing: -1.16rpx;
+  line-height: 60rpx;
+}
+
+.huawei-call-confirm .wrap .confirm .instruction {
+  font-size: 32rpx;
+  color: #101D37;
+  letter-spacing: -0.2rpx;
+  margin-top: 48rpx;
+  line-height: 44rpx;
+}
+
+.huawei-call-confirm .wrap .confirm .btn {
+  background: #3072F6;
+  border-radius: 10rpx;
+  height: 100rpx;
+  font-size: 32rpx;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 100rpx;
+  margin-top: 48rpx;
+  margin-bottom: 120rpx;
+}

@@ -1,0 +1,32 @@
+<view class="container" >
+  <view class="search-container">
+    <view class="out" style="width: 596rpx">
+      <view class="input-left" id="input-left">
+        <view class="select-city">
+          <text class="city-name">{{cityName}}</text>
+          <image class="arrow-icon"
+                 src="https://s1.ljcdn.com/link-static/resource/newh_xcx/src/pages/searchBuilding/images/arrow-down.png"
+          ></image>
+        </view>
+        <text class="line"></text>
+        <image class="search-icon"
+               src="https://s1.ljcdn.com/link-static/resource/newh_xcx/src/pages/searchBuilding/images/searchbar@2x.png"
+               mode="widthFix"
+        ></image>
+      </view>
+
+      <input focus="{{inputFocus}}"
+             style="padding-left: {{inputPaddingLeft + 4}}px"
+             value="{{keyWord}}"
+             class="search"
+             bindinput="handleSearchChange"
+             bindblur="captchaChange"
+      />
+    </view>
+    <text class="cancel" bindtap="go">go</text>
+  </view>
+
+  <phone>
+  	<view data-evt="12306"></view>
+  </phone>
+</view>
