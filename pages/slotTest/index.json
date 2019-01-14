@@ -1,0 +1,3 @@
+"usingComponents": {
+    "tab-view": "./components/tab-view/tab-view"
+  }

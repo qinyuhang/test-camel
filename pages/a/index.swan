@@ -1,0 +1,4 @@
+<view class="container" >
+    <view>Page A</view>
+    <navigator url="/pages/b/index">click here I will direct U to page B</navigator>
+</view>

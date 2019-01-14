@@ -1,0 +1,3 @@
+<view class="container" >
+  <view>page B, click left top goback icon, I will log the onUnload fn</view>
+</view>

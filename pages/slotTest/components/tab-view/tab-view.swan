@@ -1,0 +1,5 @@
+<view>
+	<block s-for="tabList">
+		<slot name="{{item}}"><slot>
+	</block>
+</view>

@@ -1,1 +1,1 @@
-{"libVersion":"2.0.28","appid":"testappid","setting":{"urlCheck":false},"condition":{"swan":{"current":-1,"list":[]}},"compileType":"smartprogram","name":"test"}
+{"libVersion":"2.0.28","appid":"testappid","setting":{"urlCheck":false},"condition":{"swan":{"current":-1,"list":[{"dependencyGraph":false,"name":"tab","pathName":"pages/slotTest/index","query":"","scene":"","updateControl":false},{"dependencyGraph":false,"name":"child","pathName":"pages/selectComponentTest/index","query":"","scene":"","updateControl":false}]}},"compileType":"smartprogram","name":"test"}

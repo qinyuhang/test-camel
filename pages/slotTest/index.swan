@@ -1,0 +1,9 @@
+<view class="slot-containr">
+    <view>slot test</view>
+    <tab-view tab-list="{{tabList}}">
+        <view s-for="item, index in tabList" slot="{{item}}">
+            <view>{{item}}</view>
+            <view s-for="item2, ind2 in tabMap[item]">{{item2}}</view>
+        </view>
+    </tab-view>
+</view>
